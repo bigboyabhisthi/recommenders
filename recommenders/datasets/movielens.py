@@ -246,6 +246,9 @@ def load_pandas_df(
         if item_df is not None:
             df = df.merge(item_df, on=header[1])
 
+    # Ratings should be greater than 0
+    print('Ratings should be greater than 0')
+    df['rating'] = df['rating'] - df['rating'].min() + 1
     return df
 
 

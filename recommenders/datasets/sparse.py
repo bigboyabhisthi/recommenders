@@ -43,6 +43,13 @@ class AffinityMatrix:
             col_rating (str): default name for rating columns
             save_path (str): default path to save item/user maps
         """
+
+        print('debug __init__')
+        # print('rows with NAs')
+        # print(df[df.isna().any(axis=1)])
+        print('ratings value counts')
+        print(df['rating'].value_counts())
+
         self.df = df  # dataframe
         self.items_list = items_list  # list of unique items
 
