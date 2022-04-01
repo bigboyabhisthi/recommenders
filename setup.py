@@ -80,7 +80,7 @@ extras_require["all"] = list(set(sum([*extras_require.values()], [])))
 
 # the following dependencies need additional testing
 extras_require["experimental"] = [
-    "vowpalwabbit>=8.9.0,<9",
+    "vowpalwabbit>=8.9.0,<10",
     "nni==1.5",
 ]
 
